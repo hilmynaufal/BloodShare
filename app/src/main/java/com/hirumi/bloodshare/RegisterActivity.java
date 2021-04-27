@@ -6,16 +6,18 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
-import android.widget.TextView;
-
-import androidx.appcompat.widget.Toolbar;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 public class RegisterActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+//        Nama              : M Hilmy Naufal
+//        Kelas             : If-2
+//        NIM               : 10118046
+//        Tanggal Pengerjaan: 27 April 2021
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         Toolbar toolbar = findViewById(R.id.registerToolbar);

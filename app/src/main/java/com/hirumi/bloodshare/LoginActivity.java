@@ -12,6 +12,10 @@ import androidx.appcompat.app.AppCompatActivity;
 public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+//        Nama              : M Hilmy Naufal
+//        Kelas             : If-2
+//        NIM               : 10118046
+//        Tanggal Pengerjaan: 27 April 2021
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 

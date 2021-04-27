@@ -1,13 +1,14 @@
 package com.hirumi.bloodshare;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-public class AlmostActivity extends AppCompatActivity {
+public class VerifyActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,14 +17,14 @@ public class AlmostActivity extends AppCompatActivity {
 //        NIM               : 10118046
 //        Tanggal Pengerjaan: 27 April 2021
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_almost);
+        setContentView(R.layout.activity_verify);
 
-        Button button = (Button) findViewById(R.id.goVerify);
+        TextView textView = (TextView) findViewById(R.id.goMain);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AlmostActivity.this, VerifyActivity.class);
+                Intent intent = new Intent(VerifyActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
