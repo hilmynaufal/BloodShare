@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#43b3e6"
+    tools:context=".AlmostActivity">
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal|bottom"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="ALMOST THERE"/>
+    <TextView
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:text="Thank you for registering with us. One more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:text="step, you need to check your email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:text="to activate your account."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp">
+    <Button
+        android:id="@+id/goAlmost"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:text="VERIFY"
+        android:layout_marginBottom="30dp"
+        android:textColor="#FFF" />
+    </LinearLayout>
+</LinearLayout>

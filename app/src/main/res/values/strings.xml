@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BloodShare</string>
+    <string-array name="bloodtype">
+        <item>Blood Type</item>
+    </string-array>
+    <string-array name="reshus">
+        <item>Reshus</item>
+    </string-array>
+    <string-array name="job">
+        <item>Job</item>
+    </string-array>
+</resources>

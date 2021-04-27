@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/registerToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/ic_header"
+        android:elevation="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+
+            android:text="Register"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_weight="1"
+        android:backgroundTint="#939597"
+        android:hint="Username" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_weight="1"
+        android:backgroundTint="#939597"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_weight="1"
+        android:backgroundTint="#939597"
+        android:hint="Phone Number"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:buttonTint="#43b3e6"
+                android:text="Male"
+                android:textColor="#939597"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:buttonTint="#43b3e6"
+                android:textColor="#939597"
+                android:text="Female"
+                android:textAlignment="center" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="20dp">
+        <Spinner
+            android:id="@+id/spinnerBlood"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_weight="1"
+            android:entries="@array/bloodtype"
+            android:textAlignment="center"
+            android:spinnerMode="dropdown"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </Spinner>
+        <Spinner
+            android:id="@+id/spinnerReshus"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:entries="@array/reshus"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </Spinner>
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_weight="1"
+        android:backgroundTint="#939597"
+        android:hint="Password"
+        android:inputType="textPassword" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_weight="1"
+        android:backgroundTint="#939597"
+        android:hint="Retype Password"
+        android:inputType="textPassword" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:textColor="#939597"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:buttonTint="#43b3e6"
+                android:text="Personal"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:textColor="#939597"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:buttonTint="#43b3e6"
+                android:text="Organization"
+                android:textAlignment="center" />
+        </RadioGroup>
+    </LinearLayout>
+    <Spinner
+        android:id="@+id/spinnerJob"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_weight="1"
+        android:textAlignment="textStart"
+        android:layout_marginHorizontal="20dp"
+        android:spinnerMode="dropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Spinner>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_weight="1"
+        android:backgroundTint="#939597"
+        android:hint="Home Address"
+        android:inputType="text" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_weight="1"
+        android:backgroundTint="#939597"
+        android:hint="Default Location"
+        android:inputType="text"
+        android:drawableEnd="@drawable/ic_blood_needed_location"/>
+    <CheckBox
+        android:button="@drawable/checkox"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="20dp"
+        android:paddingLeft="20dp"
+        android:text="Agree with Terms and Conditions"
+        android:textColor="#939597">
+    </CheckBox>
+    <Button
+        android:id="@+id/goAlmost"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/buttonregister"
+        android:text="REGISTER"
+        android:layout_marginBottom="30dp"
+        android:textColor="#43b3e6" />
+</LinearLayout>
